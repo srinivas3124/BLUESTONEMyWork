@@ -22,7 +22,7 @@ public class wait {
 		driver.get("http://tutorialsninja.com/demo/index.php?route=common/home");
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		
+		//Srinivas
 		
 
 		
