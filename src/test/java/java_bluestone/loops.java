@@ -4,11 +4,11 @@ public class loops {
 
 	public static void main(String[] args) {
 		number_1to10();
-		//decrement_loop();
-		//while_loop();
-		//decrement_while_loop();
-		//do_while_loop();
-		//decrement_do_while_loop();
+		decrement_loop();
+		while_loop();
+		decrement_while_loop();
+		do_while_loop();
+		decrement_do_while_loop();
 		
 	}
 	

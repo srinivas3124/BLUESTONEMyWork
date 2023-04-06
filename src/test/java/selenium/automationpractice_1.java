@@ -65,7 +65,8 @@ public class automationpractice_1 {
 		
 		continent.selectByVisibleText("Australia");
 		
-		WebElement selenium_commands = driver.findElement(By.xpath("//*[@id=\"mainContent\"]/div[4]/div/form/table/tbody/tr[10]/td[2]/select"));
+		
+		WebElement selenium_commands = driver.findElement(By.xpath("//select[@name='selenium_commands']"));
 		
 		Thread.sleep(5000);
 		
@@ -77,16 +78,6 @@ public class automationpractice_1 {
 		
 		Thread.sleep(5000);
 		driver.close();
-		
-		/*
-		
-		Select sc = new Select(SSCBoard_ddl);
-		
-		sc.selectByValue("icse");
-		
-		Thread.sleep(5000);
-		 */
-
 	}
 
 }

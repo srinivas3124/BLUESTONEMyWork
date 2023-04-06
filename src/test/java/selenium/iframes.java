@@ -43,7 +43,7 @@ public class iframes {
 		
 	}
 
-	private static void switchtoframe_by_index() throws InterruptedException {
+	private static void switch_to_frame_by_index() throws InterruptedException {
 		ChromeOptions co= new ChromeOptions();
 		co.addArguments("--remote-allow-origins=*");
 		System.setProperty("webdriver.chrome.driver", "C:\\DOWNLOADS_TESTING\\chromedriver_win32\\chromedriver.exe");

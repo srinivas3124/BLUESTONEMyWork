@@ -166,7 +166,7 @@ public class dropdownlist {
 		courseyear.selectByValue("4");
 		Thread.sleep(2000);
 		
-		//select addmission no
+		//select admission no
 		WebElement admission_no = driver.findElement(By.xpath("//input[@id='userProperties(admissionno)']"));		
 		Thread.sleep(2000);		
 		admission_no.sendKeys("13@T1a0345");

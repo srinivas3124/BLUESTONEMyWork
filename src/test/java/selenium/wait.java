@@ -1,10 +1,10 @@
 package selenium;
 
-import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class wait {
 
@@ -13,16 +13,15 @@ public class wait {
 
 	}
 
-	@SuppressWarnings("deprecation")
 	private static void implicit_wait() {
+		WebDriverManager.chromedriver().setup();
 		ChromeOptions co= new ChromeOptions();
 		co.addArguments("--remote-allow-origins=*");
-		System.setProperty("webdriver.chrome.driver", "C:\\DOWNLOADS_TESTING\\chromedriver_win32\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver(co); 
 		driver.get("http://tutorialsninja.com/demo/index.php?route=common/home");
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		//Srinivas
+		//driver.manage().timeouts().implicitlyWait(Duration.of(5, TimeUnit.SECONDS));
+
 		
 
 		

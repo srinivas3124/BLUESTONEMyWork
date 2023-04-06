@@ -12,6 +12,7 @@ public class instagram_login {
 		System.setProperty("webdriver.chrome.driver","C:\\DOWNLOADS_TESTING\\chromedriver_win32\\chromedriver.exe");
 		ChromeOptions co= new ChromeOptions();
 		co.addArguments("--remote-allow-origins=*");
+		co.addArguments("--disable-notifications");
 
 		WebDriver driver = new ChromeDriver(co);
 		

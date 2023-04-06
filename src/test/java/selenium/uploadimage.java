@@ -23,7 +23,7 @@ public class uploadimage {
 		
 		WebElement email_id = driver.findElement(By.xpath("//input[@id='userProperties(email)']"));	
 		js.executeScript("arguments[0].scrollIntoView();", email_id);
-		Thread.sleep(3000);		
+		Thread.sleep(2000);		
 		email_id.sendKeys("akkemsrinivas@gmail.com");
 		
 		//upload an image
@@ -34,9 +34,8 @@ public class uploadimage {
 		WebElement upload_photo = driver.findElement(By.xpath("//input[@id='studentphoto']"));
         upload_photo.sendKeys("D:\\ORIGINAL CERTIFICATES\\PASSPORT SIZE PHOTO.jpg");
         
-        Thread.sleep(5000);
-        driver.quit();
-        //Zakir
+        Thread.sleep(2000);
+        driver.close();
 
 	}
 
