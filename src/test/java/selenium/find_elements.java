@@ -21,7 +21,7 @@ public class find_elements {
 		driver.manage().window().maximize();
 		
 		//find single web element
-		WebElement single = driver.findElement(By.xpath("//table[@class='dataTable']//tr"));
+		//WebElement single = driver.findElement(By.xpath("//table[@class='dataTable']//tr"));
 		
 		//find list of web elements or multiple web elements
 		List<WebElement> allelements = driver.findElements(By.xpath("//table[@class='dataTable']//tr"));
@@ -30,10 +30,6 @@ public class find_elements {
 		
 		Thread.sleep(5000);
 		driver.close();
-		
-		
-		
-
 
 	 }
 

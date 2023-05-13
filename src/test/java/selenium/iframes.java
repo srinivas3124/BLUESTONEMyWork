@@ -9,8 +9,8 @@ import org.openqa.selenium.chrome.ChromeOptions;
 public class iframes {
 
 	public static void main(String[] args) throws InterruptedException {
-		//switchtoframe_by_id();
-		//switchtoframe_by_index();
+		switch_to_frame_by_id();
+		switch_to_frame_by_index();
 		switchtoframe_by_webelement();
 	}
 
@@ -69,7 +69,7 @@ public class iframes {
 		
 	}
 
-	private static void switchtoframe_by_id() throws InterruptedException {
+	private static void switch_to_frame_by_id() throws InterruptedException {
 		ChromeOptions co= new ChromeOptions();
 		co.addArguments("--remote-allow-origins=*");
 		System.setProperty("webdriver.chrome.driver", "C:\\DOWNLOADS_TESTING\\chromedriver_win32\\chromedriver.exe");
